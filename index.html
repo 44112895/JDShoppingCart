@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的购物车 - 京东商城</title>
+    <link type="text/css" href="css/index.css" rel="stylesheet">
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+    <div id="navigation">
+        <div class="bar">
+            <ul>
+                <li id="home">
+                    <a onclick="tips(this)">
+                        <img src="img/小房子_03.png">
+                        <span>京东首页</span>
+                    </a>
+                </li>
+                <li id="myCity">
+                    <a onclick="tips(this)">
+                        <img src="img/地址图标_03.png">
+                        <span>北京</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li id="login">
+                    <a onclick="tips(this)"><span>你好，请登录</span></a>&nbsp;&nbsp;
+                    <a onclick="tips(this)" class="signIn"><span>免费注册</span></a>
+                </li>
+                <li class="separator"><span>|</span></li>
+                <li id="myOrder">
+                    <a onclick="tips(this)"><span>我的订单</span></a>
+                </li>
+                <li class="separator"><span>|</span></li>
+                <li id="myJD">
+                    <a onclick="tips(this)"><span>我的京东</span></a>
+                </li>
+                <li class="separator"><span>|</span></li>
+                <li id="member">
+                    <a onclick="tips(this)"><span>京东会员</span></a>
+                </li>
+                <li class="separator"><span>|</span></li>
+                <li id="EnterpriseProcurement">
+                    <a onclick="tips(this)"><span>企业采购</span></a>
+                </li>
+                <li class="separator"><span>|</span></li>
+                <li id="service">
+                    <a onclick="tips(this)"><span>客户服务</span></a>
+                </li>
+                <li class="separator"><span>|</span></li>
+                <li id="siteNavigation">
+                    <a onclick="tips(this)"><span>网站导航</span></a>
+                </li>
+                <li class="separator"><span>|</span></li>
+                <li id="apps"><a onclick="tips(this)"><span>手机京东</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="dropDown">
+        <div id="myJDDropDown" class="hide">
+            <ul>
+                <div>
+                    <li><a onclick="tips(this)"><span>待处理订单</span></a></li>
+                    <li><a onclick="tips(this)"><span>返修退换货</span></a></li>
+                    <li><a onclick="tips(this)"><span>降价商品</span></a></li>
+                </div>
+                <div>
+                    <li><a onclick="tips(this)"><span>消息</span></a></li>
+                    <li><a onclick="tips(this)"><span>我的问答</span></a></li>
+                    <li><a onclick="tips(this)"><span>我的关注</span></a></li>
+                </div>
+                <hr/>
+                <div>
+                    <li><a onclick="tips(this)"><span>我的京豆</span></a></li>
+                    <li><a onclick="tips(this)"><span>我的白条</span></a></li>
+                </div>
+                <div class="bottomRight">
+                    <li><a onclick="tips(this)"><span>我的优惠券</span></a></li>
+                    <li><a onclick="tips(this)"><span>我的理财</span></a></li>
+                </div>
+            </ul>
+        </div>
+        <div id="EnterpriseProcurementDropDown" class="hide">
+            <ul>
+                <div>
+                    <li><a onclick="tips(this)"><span>企业购</span></a></li>
+                    <li><a onclick="tips(this)"><span>工业品</span></a></li>
+                    <li><a onclick="tips(this)"><span>丰客多商城</span></a></li>
+                </div>
+                <div>
+                    <li><a onclick="tips(this)"><span>商业场景馆</span></a></li>
+                    <li><a onclick="tips(this)"><span>礼品卡</span></a></li>
+                </div>
+            </ul>
+        </div>
+        <div id="serviceDropDown" class="hide">
+            <ul>
+                <div>
+                    <h5>客户</h5>
+                    <div>
+                        <li><a onclick="tips(this)"><span>帮助中心</span></a></li>
+                        <li><a onclick="tips(this)"><span>在线客服</span></a></li>
+                        <li><a onclick="tips(this)"><span>电话客服</span></a></li>
+                        <li><a onclick="tips(this)"><span>金融咨询</span></a></li>
+                        <li><a onclick="tips(this)"><span>企业客服</span></a></li>
+                    </div>
+                    <div>
+                        <li><a onclick="tips(this)"><span>售后服务</span></a></li>
+                        <li><a onclick="tips(this)"><span>意见建议</span></a></li>
+                        <li><a onclick="tips(this)"><span>客服邮箱</span></a></li>
+                        <li><a onclick="tips(this)"><span>全球售客服</span></a></li>
+                    </div>
+                </div>
+                <hr/>
+                <div>
+                    <h5>商户</h5>
+                    <div>
+                        <li><a onclick="tips(this)"><span>合作招商</span></a></li>
+                        <li><a onclick="tips(this)"><span>商家后台</span></a></li>
+                        <li><a onclick="tips(this)"><span>商家帮助</span></a></li>
+                    </div>
+                    <div>
+                        <li><a onclick="tips(this)"><span>成长中心</span></a></li>
+                        <li><a onclick="tips(this)"><span>京麦工作台</span></a></li>
+                        <li><a onclick="tips(this)"><span>规则平台</span></a></li>
+                    </div>
+                </div>
+            </ul>
+        </div>
+        <div id="siteNavigationDropDown" class="hide">
+            <ul>
+                <div>
+                    <h5>特色主题</h5>
+                    <div>
+                        <li><a onclick="tips(this)"><span>新品首发</span></a></li>
+                        <li><a onclick="tips(this)"><span>国际站</span></a></li>
+                        <li><a onclick="tips(this)"><span>台湾售</span></a></li>
+                        <li><a onclick="tips(this)"><span>0元评测</span></a></li>
+                        <li><a onclick="tips(this)"><span>秒杀</span></a></li>
+                        <li><a onclick="tips(this)"><span>拍拍二手</span></a></li>
+                    </div>
+                    <div>
+                        <li><a onclick="tips(this)"><span>京东金融</span></a></li>
+                        <li><a onclick="tips(this)"><span>京东会员</span></a></li>
+                        <li><a onclick="tips(this)"><span>俄语站</span></a></li>
+                        <li><a onclick="tips(this)"><span>港澳售</span></a></li>
+                        <li><a onclick="tips(this)"><span>闪购</span></a></li>
+                        <li><a onclick="tips(this)"><span>陪伴计划</span></a></li>
+                        <li><a onclick="tips(this)"><span>买什么</span></a></li>
+                    </div>
+                    <div>
+                        <li><a onclick="tips(this)"><span>全球售</span></a></li>
+                        <li><a onclick="tips(this)"><span>京东预售</span></a></li>
+                        <li><a onclick="tips(this)"><span>装机大师</span></a></li>
+                        <li><a onclick="tips(this)"><span>优惠券</span></a></li>
+                        <li><a onclick="tips(this)"><span>印尼站</span></a></li>
+                        <li><a onclick="tips(this)"><span>出海招商</span></a></li>
+                    </div>
+                </div>
+                <div>
+                    <h5>行业频道</h5>
+                    <div>
+                        <li><a onclick="tips(this)"><span>手机</span></a></li>
+                        <li><a onclick="tips(this)"><span>玩3C</span></a></li>
+                        <li><a onclick="tips(this)"><span>家用电器</span></a></li>
+                        <li><a onclick="tips(this)"><span>京东服饰</span></a></li>
+                        <li><a onclick="tips(this)"><span>家装城</span></a></li>
+                        <li><a onclick="tips(this)"><span>食品</span></a></li>
+                        <li><a onclick="tips(this)"><span>整车</span></a></li>
+                        <li><a onclick="tips(this)"><span>劳动防护</span></a></li>
+                    </div>
+                    <div>
+                        <li><a onclick="tips(this)"><span>智能数码</span></a></li>
+                        <li><a onclick="tips(this)"><span>电脑办公</span></a></li>
+                        <li><a onclick="tips(this)"><span>京鱼座智能</span></a></li>
+                        <li><a onclick="tips(this)"><span>京东生鲜</span></a></li>
+                        <li><a onclick="tips(this)"><span>母婴</span></a></li>
+                        <li><a onclick="tips(this)"><span>农资频道</span></a></li>
+                        <li><a onclick="tips(this)"><span>图书</span></a></li>
+                    </div>
+                </div>
+                <div>
+                    <h5>生活服务</h5>
+                    <div>
+                        <li><a onclick="tips(this)"><span>京东众筹</span></a></li>
+                        <li><a onclick="tips(this)"><span>京东进入App</span></a></li>
+                        <li><a onclick="tips(this)"><span>理财</span></a></li>
+                        <li><a onclick="tips(this)"><span>水电煤</span></a></li>
+                        <li><a onclick="tips(this)"><span>旅行</span></a></li>
+                        <li><a onclick="tips(this)"><span>电影票</span></a></li>
+                        <li><a onclick="tips(this)"><span>游戏</span></a></li>
+                    </div>
+                    <div>
+                        <li><a onclick="tips(this)"><span>白条</span></a></li>
+                        <li><a onclick="tips(this)"><span>京东小金库</span></a></li>
+                        <li><a onclick="tips(this)"><span>话费</span></a></li>
+                        <li><a onclick="tips(this)"><span>彩票</span></a></li>
+                        <li><a onclick="tips(this)"><span>机票酒店</span></a></li>
+                        <li><a onclick="tips(this)"><span>京东到家</span></a></li>
+                        <li><a onclick="tips(this)"><span>拍拍回收</span></a></li>
+                    </div>
+                </div>
+                <div>
+                    <h5>更多精选</h5>
+                    <div>
+                        <li><a onclick="tips(this)"><span>合作招商</span></a></li>
+                        <li><a onclick="tips(this)"><span>京东E卡</span></a></li>
+                        <li><a onclick="tips(this)"><span>服务市场</span></a></li>
+                        <li><a onclick="tips(this)"><span>校园加盟</span></a></li>
+                        <li><a onclick="tips(this)"><span>游戏社区</span></a></li>
+                    </div>
+                    <div>
+                        <li><a onclick="tips(this)"><span>京东通信</span></a></li>
+                        <li><a onclick="tips(this)"><span>企业采购</span></a></li>
+                        <li><a onclick="tips(this)"><span>办公生活馆</span></a></li>
+                        <li><a onclick="tips(this)"><span>京东社区</span></a></li>
+                        <li><a onclick="tips(this)"><span>知识产权维权</span></a></li>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div id="head">
+        <div id="logo">
+            <img src="img/京东购物车.png">
+        </div>
+        <div id="search">
+            <input type="text" value="自营">
+            <input type="image" src="img/搜索.png">
+        </div>
+    </div>
+    <div id="body">
+        <div id="warning">
+            <div><img src="img/三角警告_07.png"></div>
+            <div><span>您还没有登录！登陆后购物车的商品将会保存到您账号中</span></div>
+            <div><a onclick="tips(this)"><span>立即登录</span></a></div>
+        </div>
+        <div id="productList">
+            <div id="title">
+                <div><h3>全部商品</h3>&nbsp;&nbsp;<span id="num">0</span></div>
+                <div>
+                    <span>配送至:</span>
+                    <select id="city">
+                        <option value="bj">北京</option>
+                        <option value="tj">天津</option>
+                        <option value="sh">上海</option>
+                    </select>
+                    <select id="area">
+                        <option value="hd">海淀区</option>
+                        <option value="cy">朝阳区</option>
+                        <option value="dc">东城区</option>
+                    </select>
+                </div>
+            </div>
+            <table id="goods" cellspacing="0" cellpadding="0" border="0">
+                <thead>
+                    <tr>
+                        <th><input type="checkbox" class="checkAll"></th>
+                        <th>全选</th>
+                        <th>商品</th>
+                        <th></th>
+                        <th>单价</th>
+                        <th>数量</th>
+                        <th>小计</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="jDZY">
+                        <td><input type="checkbox" class="checkMulti1" name="checkMulti"></td>
+                        <td><img src="img/京东自营.png" width="60px"></td>
+                        <td></td>
+                        <td><img src="img/优惠券.png"></td>
+                        <td></td>
+                        <td></td>
+                        <td colspan="2">
+                            <img src="img/i.png" class="i">
+                            <span class="tip">还差<span class="worse">&yen;0.00</span>免运费</span>&nbsp;&nbsp;<a href="#recommend">去凑单</a>&gt;
+                        </td>
+                    </tr>
+                    <tr class="fenGe"><td colspan="8"><hr/></td></tr>
+                    <tr id="fullReduction1">
+                        <td><img src="img/满减.png"></td>
+                        <td colspan="7">
+                            <span>活动商品购满两件，即可享受满减&nbsp;&gt;</span>
+                            <span>&nbsp;&nbsp;<a href="#recommend">去凑单</a>&nbsp;&gt;</span>
+                        </td>
+                    </tr>
+                    <tr class="good1">
+                        <td><input type="checkbox" name="check"></td>
+                        <td><img src="img/莫斯利安.png" name="莫斯利安" alt="莫斯利安"></td>
+                        <td>
+                            <img src="img/shop.png">
+                            <span>&nbsp;光明&nbsp;莫斯利安&nbsp;常温酸奶酸牛奶(原味)350g*6盒/礼盒装</span>
+                        </td>
+                        <td>
+                            <span>莫斯利安350g*6盒/原...</span>
+                        </td>
+                        <td>
+                            <span class="price">&yen;34.80</span>
+                            <img src="img/促销.png">
+                        </td>
+                        <td>
+                            <div class="minus">-</div>
+                            <input type="text" class="input" value="1">
+                            <div class="add">+</div>
+                            <div class="hasGood">有货</div>
+                        </td>
+                        <td>
+                            <div class="subtotal">&yen;34.80</div>
+                            <div class="weight">2.36kg</div>
+                        </td>
+                        <td>
+                            <div class="delete">删除</div>
+                            <div class="remove">移到我的关注</div>
+                        </td>
+                    </tr>
+                    <!--<tr class="jG"><td colspan="8"><hr/></td></tr>-->
+                    <tr class="good1">
+                        <td><input type="checkbox" name="check"></td>
+                        <td><img src="img/福临门大米.png" name="福临门大米" alt="福临门大米"></td>
+                        <td>
+                            <img src="img/shop.png">
+                            <span>&nbsp;福临门&nbsp;东北大米&nbsp;水晶米&nbsp;中粮出品&nbsp;大米5g</span>
+                        </td>
+                        <td>
+                            <span>水晶米5kg</span>
+                        </td>
+                        <td>
+                            <span class="price">&yen;27.90</span>
+                            <img src="img/促销.png">
+                        </td>
+                        <td>
+                            <div class="minus">-</div>
+                            <input type="text" class="input" value="1">
+                            <div class="add">+</div>
+                            <div class="hasGood">有货</div>
+                        </td>
+                        <td>
+                            <div class="subtotal">&yen;27.90</div>
+                            <div class="weight">5kg</div>
+                        </td>
+                        <td>
+                            <div class="delete">删除</div>
+                            <div class="remove">移到我的关注</div>
+                        </td>
+                    </tr>
+                    <tr id="jDHD">
+                        <td><input type="checkbox" class="checkMulti2" name="checkMulti"></td>
+                        <td><img src="img/京东好店.png" width="60px"></td>
+                        <td></td>
+                        <td><img src="img/优惠券.png"></td>
+                        <td></td>
+                        <td></td>
+                        <td colspan="2">
+                            <img src="img/i.png" class="i">
+                            <span class="tip">还差<span class="worse">&yen;0.00</span>免运费</span>&nbsp;&nbsp;<a href="#recommend">去凑单</a>&gt;
+                        </td>
+                    </tr>
+                    <tr class="fenGe"><td colspan="8"><hr/></td></tr>
+                    <tr id="fullReduction2">
+                        <td><img src="img/满减.png"></td>
+                        <td colspan="7">
+                            <span>活动商品购满两件，即可享受满减&nbsp;&gt;</span>
+                            <span>&nbsp;&nbsp;<a href="#recommend">去凑单</a>&nbsp;&gt;</span>
+                        </td>
+                    </tr>
+                    <tr class="good2">
+                        <td><input type="checkbox" name="check"></td>
+                        <td><img src="img/鱼肉.png" name="鱼肉" alt="悦胜鱼肉"></td>
+                        <td>
+                            <img src="img/京东_18.png">
+                            <span>&nbsp;【2分9折，3分8折】&nbsp;悦胜&nbsp;海南马鲛鱼整条切片&nbsp;2斤装&nbsp;冷冻鲅鱼段</span>
+                        </td>
+                        <td>
+                            <span></span>
+                        </td>
+                        <td>
+                            <span class="price">&yen;118.00</span>
+                            <img src="img/促销.png">
+                        </td>
+                        <td>
+                            <div class="minus">-</div>
+                            <input type="text" class="input" value="1">
+                            <div class="add">+</div>
+                            <div class="hasGood">有货</div>
+                        </td>
+                        <td>
+                            <div class="subtotal">&yen;118.00</div>
+                            <div class="weight"></div>
+                        </td>
+                        <td>
+                            <div class="delete">删除</div>
+                            <div class="remove">移到我的关注</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="settlement">
+            <div>
+                <input type="checkbox" class="checkAll">
+            </div>
+            <div>全选&nbsp;&nbsp;</div>
+            <div><span class="link">删除选中的商品&nbsp;&nbsp;</span></div>
+            <div><span class="link">移到我的关注&nbsp;&nbsp;</span></div>
+            <div><span class="link">清理购物车</span></div>
+            <div></div>
+            <div>
+                <div>已选择<span id="totalNum">0</span>件商品&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                <div>
+                    总价:<span id="totalPrice">&yen;0.00</span>
+                </div>
+                <div>
+                    <img src="img/灯泡_03.png">
+                </div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;已节省:<span id="reduce">-&yen;0.00</span></div>
+            </div>
+            <div id="submit">
+                去结算
+            </div>
+        </div>
+        <div id="recommend">
+            <div class="h4"><h4>猜你喜欢</h4></div>
+            <div id="recommendGood">
+                <div class="good1" name="recommendGood">
+                    <div><img src="img/莫斯利安_big.png" name="莫斯利安_big" alt="莫斯利安"></div>
+                    <div class="莫斯利安350g*6盒/原...">光明&nbsp;莫斯利安&nbsp;常温酸奶酸牛奶(原味)350g*6盒/礼盒装</div>
+                    <div class="5kg">&yen;34.80</div>
+                    <div><img src="img/加入_03.png"></div>
+                </div>
+                <div class="good2" name="recommendGood">
+                    <div><img src="img/牛肉.png" name="牛肉" alt="科尔沁牛肉"></div>
+                    <div class="科尔沁牛肉400g/孜然味">科尔沁&nbsp;休闲肉脯零食&nbsp;内蒙古特产&nbsp;手撕分割牛肉干孜然味400g</div>
+                    <div>&yen;79.9</div>
+                    <div><img src="img/加入_03.png"></div>
+                </div>
+                <div class="good1" name="recommendGood">
+                    <div><img src="img/德芙_03.png" name="德芙_03" alt="德芙巧克力"></div>
+                    <div class="德芙巧克力分享碗装">德芙Dove巧克力分享碗装&nbsp;什锦牛奶榛仁葡萄干巧克力&nbsp;婚庆&nbsp;糖果&nbsp;礼品&nbsp;休闲</div>
+                    <div>&yen;32.90</div>
+                    <div><img src="img/加入_03.png"></div>
+                </div>
+                <div class="good2" name="recommendGood">
+                    <div><img src="img/播放器_03.png" name="播放器_03" alt="网易云音乐车载蓝牙播放器"></div>
+                    <div class="网易云音乐车载蓝牙播放器">网易云音乐车载蓝牙播放器&nbsp;车载充电器&nbsp;一拖二USB车充&nbsp;汽车车载mp3音乐</div>
+                    <div>&yen;119.00</div>
+                    <div><img src="img/加入_03.png"></div>
+                </div>
+                <div class="good1" name="recommendGood">
+                    <div><img src="img/福临门大米.png" name="福临门大米" alt="福临门大米"></div>
+                    <div class="水晶米5kg">福临门&nbsp;东北大米&nbsp;水晶米&nbsp;中粮出品&nbsp;大米5g</div>
+                    <div>&yen;27.90</div>
+                    <div><img src="img/加入_03.png"></div>
+                </div>
+                <div class="good2" name="recommendGood">
+                    <div><img src="img/碧浪.png" name="碧浪" alt="碧浪洗衣液"></div>
+                    <div class="抑菌更除螨2kg*3">碧浪&nbsp;Ariel&nbsp;抑菌除菌更除螨洗衣液&nbsp;超值套装&nbsp;2kg*3&nbsp;除螨更防螨&nbsp;清</div>
+                    <div>&yen;109.90</div>
+                    <div><img src="img/加入_03.png"></div>
+                </div>
+                <div class="good2" name="recommendGood">
+                    <div><img src="img/马丁.png" name="马丁" alt="马丁男士洗面奶"></div>
+                    <div class="【去除黑头】控油祛痘洁面乳...">马丁男士古龙香氛洗面奶男士竹炭控油去黑头洁面乳150ml</div>
+                    <div>&yen;66.80</div>
+                    <div><img src="img/加入_03.png"></div>
+                </div>
+                <div class="good1" name="recommendGood">
+                    <div><img src="img/雷诺.png" name="雷诺" alt="雷诺手表"></div>
+                    <div class="一表两带·定制礼盒【...">【贾乃亮同款&nbsp;雷诺（RARONE）男士手表&nbsp;全自动镂空机械表正品防水男表</div>
+                    <div>&yen;1399.00</div>
+                    <div><img src="img/加入_03.png"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="foot">
+        <div id="dKHS">
+            <div><img src="img/多_03.png"></div>
+            <div>品类齐全，轻松购物</div>
+            <div><img src="img/快_03.png"></div>
+            <div>多仓直发，极速配送</div>
+            <div><img src="img/好_03.png"></div>
+            <div>正品行货，精致服务</div>
+            <div><img src="img/省_03.png"></div>
+            <div>天天低价，畅选无忧</div>
+        </div>
+        <div id="helpMessage">
+            <div>
+                <div>
+                    <h5>购物指南</h5>
+                    <a onclick="tips(this)"><span>购物流程</span></a><br/>
+                    <a onclick="tips(this)"><span>会员介绍</span></a><br/>
+                    <a onclick="tips(this)"><span>生活旅行/团购</span></a><br/>
+                    <a onclick="tips(this)"><span>常见问题</span></a><br/>
+                    <a onclick="tips(this)"><span>大家电</span></a><br/>
+                    <a onclick="tips(this)"><span>联系客服</span></a>
+                </div>
+                <div>
+                    <h5>配送方式</h5>
+                    <a onclick="tips(this)"><span>上门自提</span></a><br/>
+                    <a onclick="tips(this)"><span>211限时达</span></a><br/>
+                    <a onclick="tips(this)"><span>配送服务查询</span></a><br/>
+                    <a onclick="tips(this)"><span>配送费收取标准</span></a><br/>
+                    <a onclick="tips(this)"><span>海外配送</span></a>
+                </div>
+                <div>
+                    <h5>支付方式</h5>
+                    <a onclick="tips(this)"><span>货到付款</span></a><br/>
+                    <a onclick="tips(this)"><span>在线支付</span></a><br/>
+                    <a onclick="tips(this)"><span>分期付款</span></a><br/>
+                    <a onclick="tips(this)"><span>公司转账</span></a>
+                </div>
+                <div>
+                    <h5>售后服务</h5>
+                    <a onclick="tips(this)"><span>售后政策</span></a><br/>
+                    <a onclick="tips(this)"><span>价格保护</span></a><br/>
+                    <a onclick="tips(this)"><span>退款说明</span></a><br/>
+                    <a onclick="tips(this)"><span>返修/退换货</span></a><br/>
+                    <a onclick="tips(this)"><span>取消订单</span></a>
+                </div>
+                <div>
+                    <h5>特色服务</h5>
+                    <a onclick="tips(this)"><span>夺宝岛</span></a><br/>
+                    <a onclick="tips(this)"><span>DIY装机</span></a><br/>
+                    <a onclick="tips(this)"><span>延保服务</span></a><br/>
+                    <a onclick="tips(this)"><span>京东E卡</span></a><br/>
+                    <a onclick="tips(this)"><span>京东通信</span></a><br/>
+                    <a onclick="tips(this)"><span>京鱼座智能</span></a>
+                </div>
+            </div>
+        </div>
+        <div id="message">
+            <div>
+                <a onclick="tips(this)"><span>关于我们</span></a>&nbsp;|&nbsp;
+                <a onclick="tips(this)"><span>联系我们</span></a>&nbsp;|&nbsp;
+                <a onclick="tips(this)"><span>联系客服</span></a>&nbsp;|&nbsp;
+                <a onclick="tips(this)"><span>合作招商</span></a>&nbsp;|&nbsp;
+                <a onclick="tips(this)"><span>商家帮助</span></a>&nbsp;|&nbsp;
+                <a onclick="tips(this)"><span>营销中心</span></a>&nbsp;|&nbsp;
+                <a onclick="tips(this)"><span>手机京东</span></a>&nbsp;|&nbsp;
+                <a onclick="tips(this)"><span>友情链接</span></a>&nbsp;|&nbsp;
+                <a onclick="tips(this)"><span>销售联盟</span></a>&nbsp;|&nbsp;
+                <a onclick="tips(this)"><span>京东社区</span></a>&nbsp;|&nbsp;
+                <a onclick="tips(this)"><span>风险监测</span></a>&nbsp;|&nbsp;
+                <a onclick="tips(this)"><span>隐私政策</span></a>&nbsp;|&nbsp;
+                <a onclick="tips(this)"><span>京东公益</span></a>&nbsp;|&nbsp;
+                <a onclick="tips(this)"><span>English Site</span></a>&nbsp;|&nbsp;
+                <a onclick="tips(this)"><span>Mefia & IR</span></a>
+            </div>
+            <div>
+                <a onclick="tips(this)"><span>京公网安备 11000002000088号</span></a>&nbsp;|&nbsp;京ICP证070359号&nbsp;|&nbsp;<a onclick="tips(this)"><span>互联网药品信息服务资格证编号(京)-经营性-2014-0008</span></a>&nbsp;|&nbsp;新出发京零&nbsp;字第大120007号
+            </div>
+            <div>
+                互联网出版许可证编号新出网证(京)字150号&nbsp;|&nbsp;<a onclick="tips(this)"><span>出版物经营许可证</span></a>&nbsp;|&nbsp;<a onclick="tips(this)"><span>网络文化经营许可证京网文[2014]2148-348号</span></a>&nbsp;|&nbsp;违法和不良信息举报电话：4006561155
+            </div>
+            <div>
+                Copyright&nbsp;&copy;&nbsp;2004&nbsp;-&nbsp;2020&nbsp;京东JD.com&nbsp;版权所有&nbsp;|&nbsp;消费者维权热线：4006067733&nbsp;<a onclick="tips(this)"><span>经营证照</span></a>&nbsp;|&nbsp;(京)网械平台备字(2018)第00003号&nbsp;|&nbsp;<a onclick="tips(this)"><span>营业执照</span></a>
+            </div>
+            <div>
+                <img src="img/国旗_03.png">
+            </div>
+            <div>
+                京东旗下网站：&nbsp;<a onclick="tips(this)"><span>京东钱包</span></a>&nbsp;|&nbsp;<a onclick="tips(this)"><span>京东智联云</span></a>
+            </div>
+            <div>
+                <img src="img/123.png">
+            </div>
+        </div>
+    </div>
+    <div id="focus">
+        <img src="img/关注_03.png">
+    </div>
+    <div id="doubt">
+        <a href="#navigation"><img src="img/怀疑_03.png"></a>
+    </div>
+</body>
+</html>
